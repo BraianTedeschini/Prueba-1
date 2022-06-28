@@ -21,9 +21,9 @@ body {
 .navbar {
     color: white;
     background-color: black;
-    display: flex;
+    float: right;
+    display: block;
     margin-left: 50%;
-    padding-right: -10%;
 }
 
 ul {
@@ -36,4 +36,6 @@ li {
 
 ul, li{
     list-style: none;
+
 }
+@media ()
