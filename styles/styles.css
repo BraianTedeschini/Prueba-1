@@ -3,39 +3,75 @@ body {
     --bs-body-line-height: 1.4;
     --bs-body-bg: var(--bs-gray-100);
 }
-  
-.table {
-    --bs-table-color: var(--bs-gray-600);
-    --bs-table-bg: var(--bs-gray-100);
-    --bs-table-border-color: transparent;
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+    body{background: rgba(0, 0, 0, 0.986);}
+    .logo{
+        float: left;
+        display: block;}
+        .table {
+            --bs-table-color: var(--bs-gray-600);
+            --bs-table-bg: var(--bs-gray-100);
+            --bs-table-border-color: transparent;
+        }
+        .columnas{
+            border: 02px solid;
+            background-color: blueviolet;
+        }
+        .header{
+            border-bottom: 01px solid #ccc;
+        }
+        .navbar {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.24);
+            float: right;
+            display: flexbox;
+            margin-left: 68%;
+            backdrop-filter: blur(5px);
+            border-radius: 2px;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            margin: 0.1px;
+        }
+        ul, li{
+            list-style: none;
+            justify-items: center;
+            padding: 1%;
+        }
+        .carousel-item {
+            max-width: 1500px;
+            max-height: 500px;
+
+        }
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    body{background: rgba(0, 0, 0, 0.986);}
 }
 
-.columnas{
-    border: 02px solid;
-    background-color: blueviolet;
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    body{background: rgba(0, 0, 0, 0.849);}
 }
+/*fin tablet*/
 
-.header{
-    border-bottom: 01px solid #ccc;
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    body{background: rgba(0, 0, 0, 0.849);}
+ }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    body{background: rgba(0, 0, 0, 0.849);}
 }
-.navbar {
-    color: white;
-    background-color: black;
-    float: right;
-    display: block;
-    margin-left: 50%;
-}
-
-ul {
-    display: flex;
-}
-
-li {
-    margin: 05px;
-}
-
-ul, li{
-    list-style: none;
-
-}
-@media ()
+/*fin movil*/
